@@ -1,0 +1,17 @@
+
+	{{#each filteredResult as |r|}}
+	<li>
+		<a href="{{r.url}}" target="_blank">{{r.url}}</a>
+		<h2><a href="{{r.url}}" id="thisLink" target="_blank">{{r.title}}</a></h2>
+		<p>{{r.description}}
+		<div class="list">
+			<li>
+				{{#each r.links as |link|}}
+				<a href="{{link.url}}" target="_blank">{{link.title}}</a>
+
+				{{/each}}
+			</li>
+		</div>
+	</p>
+</li>
+{{/each}}

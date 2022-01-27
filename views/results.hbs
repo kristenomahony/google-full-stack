@@ -1,0 +1,13 @@
+<div class="navigation">
+	<img src="img/google.png">
+	<form action ="/results" method ="post">
+		<input class="searchbar" type="text" name = "search"/>
+		<button>Search</button>
+	</form>
+</div>
+<div class="span">
+	<span>{{filteredResult.length}} results</span>
+</div>
+<ul>
+	{{> result  r=r}}
+</ul>
