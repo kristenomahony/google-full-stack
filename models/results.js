@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
-module.exports = mongoose.model('Results')
+
 // Create the results moodel
-mongoose.model('results', {
+module.exports = mongoose.model('results', {
   title: {
     type: String,
     required: true
